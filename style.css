@@ -1,0 +1,214 @@
+.navbar{
+    padding: 10px 10px;
+    background-color: #02024df5;
+    color: #eb8657;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+.hero{
+    background:url(monogram-5.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    transition: all 2s;
+}
+.hero  h3 span:nth-child(1){
+    font-size: 40px;
+    color: #eb8657;
+}
+.hero h3 .fs-6{
+    color: #eb8657;
+}
+
+.hero:hover{
+    background: url(monogram-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 2s linear;
+}
+
+.in-web{
+    background: url(monogram-4.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.in-web:hover{
+    background: url(monogram-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width : 730px) {
+    ul li{
+        display: none;
+    }
+    .nav-options ul li{
+        display: none;
+    }
+   .sidebar{
+    display: block;
+   }
+
+   header{
+    width: 100%;
+   }
+   #toggleButton{
+    display: block;
+   }
+ ol li{
+    display: block;
+ }
+
+ #dashboard {
+    height: 100vh;
+}
+ .row .col h5{
+    font-size: 10px;
+ }
+
+#sidebar {
+    width: 220px;
+    background-color:#02024e;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    bottom: 0;
+    left: -350px;
+    transition: left 0.8s;
+}
+
+#sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #eb8657;
+}
+
+#sidebar .menu {
+    margin-bottom: 20px;
+}
+
+#sidebar .menu a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #eb8657;
+    border-radius: 5px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#sidebar .menu a:hover {
+    transform: scale(80%)
+}
+
+#sidebar .support a {
+    display: block;
+    color: #eb8657;
+    text-decoration: none;
+    margin: 15px 0;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+    #sidebar.open{
+        left: 0;
+    }
+    .bottom-card h4{
+        font-size: 17px;
+    }
+}
+
+.hero-text{
+    animation:text 2s ease-in-out;
+}
+
+    @keyframes text {
+        0%{
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+   .web-text{
+    text-align: center;
+    }
+    @media (min-width : 731px) {
+        #up-ani{
+            animation:animation-up 1s ease-in-out ;
+        }
+        
+        @keyframes animation-up {
+            0%{
+                opacity: 0;
+                transform: translateY(270px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #dashboad{
+            display: none;
+        }
+        .profile{
+            display: none;
+        }
+    
+        #toggleButton{
+            display: none;
+        }
+        #solid{
+            display: none;
+        }
+        #dashboard  a{
+            display: none;
+        }
+        
+    }
+    .fa-brands{
+        color: #834a2f;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    input{
+        background-color: #02024e;
+        border: 1px solid #834a2f;
+        color: white;
+    }
+    .footer{
+        background-color: #02024e;
+        color: #eb8657;
+        width: 100%;
+       
+    }
+    
+    button{
+        border: 1px solid #834a2f;
+        background-color: #834a2f;
+        color: #020250;
+        border-radius: 20px;
+    }
